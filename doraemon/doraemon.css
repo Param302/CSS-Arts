@@ -1,0 +1,605 @@
+body {
+    background-image: radial-gradient( #b7cee6, #54a0f7);
+}
+
+.container {
+    /* background-image: radial-gradient( #1f7fee, #d9e3ee); */
+    width: 50vh;
+    height: 60vh;
+    margin: 15vh auto;
+    position: relative;
+}
+
+.head {
+    background-color: rgb(0, 153, 255);
+    width: 56.5%;
+    height: 48%;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: auto;
+    position: relative;
+    top: 10%;
+    z-index: 1;
+}
+
+/* =================== Face with eyes, nose, smile, =================== */
+.face {
+    background-color: white;
+    width: 50%;
+    height: 32%;
+    border-radius: 100% 100% 80% 80%;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    margin: auto;
+    position: relative;
+    top: -30%;
+    z-index: 4;
+}
+
+.face::before, .face::after {
+    content: "";
+    display: block;
+    background-color: inherit;
+    width: 15%;
+    height: 30%;
+    position: inherit;
+    border-radius: 20%;
+}
+
+.face::before {
+    top: 65%;
+    left: 4.5%;
+    transform: rotate(-22deg);
+}
+
+.face::after {
+    top: 35%;
+    left: 80.5%;
+    transform: rotate(22deg);
+}
+
+/* =================== EYE =================== */
+.eye {
+    background-color: inherit;
+    width: 20%;
+    height: 35%;
+    border-radius: 50% 50% 45% 45%;
+    border: 2px solid black;
+    position: absolute;
+    top: -20%;
+    z-index: 5;
+}
+
+#left {
+    left: 29%;
+}
+
+#right {
+    left: 50%;
+}
+
+.black-spot {
+    background-color: #000;
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+    top: 50%;
+}
+
+#left-spot {
+    left: 20%;
+}
+
+#right-spot {
+    left: -20%;
+}
+
+.white-spot {
+    background-color: hsl(0, 100%, 100%);
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    margin: auto;
+    position: inherit;
+    top: 25%;
+}
+
+#left-white {
+    left: 5%;
+}
+
+#right-white {
+    left: -10%;
+}
+
+/* =================== Nose =================== */
+.nose {
+    background-color: red;
+    width: 13%;
+    height: 15%;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: absolute;
+    top: 10%;
+    left: 43%;
+    z-index: 6;
+}
+
+#nose-spot {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+
+/* =================== Vibrissae =================== */
+.vibrissae {
+    background-color: hsl(0, 0%, 0%);
+    width: 28%;
+    height: 1%;
+    position: absolute;
+    z-index: 12;
+}
+
+#vb1 {
+    top: 20%;
+    left: 14%;
+    transform: rotate(15deg);
+}
+
+#vb2 {
+    width: 32%;
+    top: 29%;
+    left: 9%;
+    transform: rotate(5deg);
+
+}
+
+#vb3 {
+    width: 33%;
+    top: 38%;
+    left: 9%;
+    transform: rotate(-5deg);
+}
+
+#vb4 {
+    top: 20%;
+    left: 58%;
+    transform: rotate(-15deg);
+}
+
+#vb5 {
+    width: 32%;
+    top: 29%;
+    left: 59%;
+    transform: rotate(-5deg);
+}
+
+#vb6 {
+    width: 33%;
+    top: 38%;
+    left: 59%;
+    transform: rotate(5deg);
+}
+
+/* =================== Nose-line =================== */
+.nose-line {
+    background-color: hsl(0, 50%, 0%);
+    width: 1.5%;
+    height: 18%;
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    z-index: 11;
+}
+
+/* =================== Smile =================== */
+.smile {
+    background-color: rgb(224, 11, 11);
+    width: 70%;
+    height: 45%;
+    border-radius: 0 0 12vw 12vw;
+    border: 2px solid black;
+    border-top: none;
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    z-index: 10;
+}
+
+.smile::before, .smile::after {
+    content: "";
+    display: block;
+    background-color: white;
+    width: 65%;
+    height: 25%;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+
+.smile::before {
+    border-radius: 0 0 0px 50px;
+    border-left: 2px solid black;
+    top: -10%;
+    left: -15%;
+    z-index: 1;
+    transform: rotate(-8deg);
+}
+
+.smile::after {
+    border-radius: 0 0 50px 0;
+    border-right: 2px solid black;
+    top: -37%;
+    left: 50%;
+    transform: rotate(8deg);
+}
+
+.smile-circle {
+    /* background-color: red; */
+    width: 20%;
+    height: 18%;
+    position: absolute;
+    /* z-index: 13; */
+}
+
+#sm-circle1 {
+    /* top: 0%; */
+    left: 12px;
+    border-left: 2px solid black;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+#sm-circle2 {
+    right: 6px;
+    border-right: 2px solid black;
+    border-top-right-radius:50px;
+    border-bottom-right-radius: 50px;
+}
+/* =================== Tongue =================== */
+.tongue {
+    background-color: rgb(245, 63, 63);
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    border-radius: 0 0px 50px 50px;
+    width: 50px;
+    height: 30px;
+}
+
+.tongue::before {
+    background-color: rgb(245, 63, 63);
+    content: "";
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 45px;
+    border-radius: 50px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    left: -25px;
+    top: -19px;
+    transform: rotate(12deg);
+}
+
+.tongue::after {
+    background-color: rgb(245, 63, 63);
+    content: "";
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 45px;
+    border-radius: 50px 50px 50px 0px;
+    border-right: 2px solid black;
+    border-top: 2px solid black;
+    left: 22px;
+    bottom: 67px;
+    transform: rotate(12deg);
+}
+
+.tongue-cover {
+    background-color: rgb(245, 63, 63);
+    position: absolute;
+    width: 95px;
+    height: 35px;
+    border-radius: 50%;
+    left: 36px;
+    bottom: -1px;
+    border-bottom: 2px solid black;
+}
+
+
+/* =================== Rope =================== */
+.rope {
+    background-color: red;
+    width: 44%;
+    height: 2.2%;
+    margin: auto;
+    position: relative;
+    top: -32.5%;
+    z-index: 5;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.rope::before, .rope::after {
+    content: "";
+    display: block;
+    background-color: inherit;
+    width: 55%;
+    height: 50%;
+    border-top: 2px solid black;
+    position: relative;
+}
+
+.rope::before {
+    border-radius: 20% 50% 0 0;
+    border-left: 2px solid black;
+    top: -17%;
+    transform: rotate(-2deg);
+}
+
+.rope::after {
+    border-radius: 50% 20% 0 0;
+    border-right: 2px solid black;
+    top: -80%;
+    left: 45%;
+    transform: rotate(3deg);
+}
+
+/* =================== Bell =================== */
+.bell {
+    background-color: gold;
+    width: 11%;
+    height: 8%;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: absolute;
+    top: 50%;
+    left: 44.5%;
+    z-index: 15;
+}
+
+.bell-strip {
+    background-color: inherit;
+    width: 92%;
+    height: 10%;
+    border-radius: 34%;
+    border: 2px solid black;
+    position: absolute;
+    top: 20%;
+}
+
+.inner-circle {
+    background-color: goldenrod;
+    width: 32%;
+    height: 32%;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+
+.Vline {
+    background-color: black;
+    width:7%;
+    height: 30%;
+    position: absolute;
+    top: 73%;
+    left: 45%;
+}
+
+/* =================== Hand =================== */
+.hand {
+    background-color: rgb(0, 153, 255);
+    width: 10%;
+    height: 22%;
+    border: 2px solid black;
+    position: absolute;
+    top: 48%;
+    z-index: 2;
+}
+
+.hand::after {
+    content: "";
+    display: block;
+    background-color: white;
+    width: 100%;
+    height: 35%;
+    border-radius: 50%;
+    border: inherit;
+    position: relative;
+    top: 85%;
+}
+
+#left-hand {
+    border-radius: 0 25% 25px 25px;
+    left: 15%;
+    top: 39%;
+    width: 50px;
+    transform: rotate(125deg);
+}
+
+#right-hand {
+    border-radius: 0 50% 30% 30%;
+    left: 70%;
+    transform: rotate(-25deg);
+}
+
+#left-hand::after {
+    width: 55px;
+    height: 55px;
+    left: -12%;
+    top: 80%;
+}
+
+#right-hand::after {
+    left: -5%;
+}
+
+/* =================== Body below head =================== */
+.body {
+    background-color: rgb(0, 153, 255);
+    width: 38%;
+    height: 42%;
+    border-radius: 0 1%;
+    margin: auto;
+    position: relative;
+    top: -39%;
+    z-index: 3;
+}
+
+.body::before, .body::after {
+    content: "";
+    display: block;
+    background-color: rgb(0, 153, 255);
+    width: 20%;
+    height: 81.5%;
+    position: absolute;
+    top: 18%;
+}
+
+.body::before {
+    left: -8%;
+    border-radius: 80% 50% 0 50%;
+    border-left: 2px solid black;
+    transform: rotate(-6deg) skewY(-20deg);
+}
+
+.body::after {
+    left: 88%;
+    border-radius: 50% 80% 50% 0;
+    border-right: 2px solid black;
+    transform: rotate(6deg) skewY(20deg);
+}
+
+.area {
+    background-color: white;
+    width: 100%;
+    height: 75%;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: auto;
+    position: relative;
+    top: 11%;
+    z-index: 7;
+}
+
+.pocket {
+    background-color: inherit;
+    border-radius: 0 0 16vw 16vw;
+    border: inherit;
+    width: 80%;
+    height: 40%;
+    margin: auto;
+    position: relative;
+    top: 48%;
+    z-index: 8;
+}
+
+/* =================== Leg =================== */
+.leg {
+    background-color: brown;
+    background-color: rgb(0, 153, 255);
+    width: 16.6%;
+    height: 8%;
+    border-bottom: 2px solid black;
+    border-radius: 0 10px 10px;
+    position: absolute;
+    bottom: 10%;
+    z-index: 4;
+}
+
+#left-leg {
+    left: 30.5%;
+}
+
+#right-leg {
+    right: 30.5%;
+}
+
+.leg::before {
+    content: "";
+    display: block;
+    background-color: rgb(0, 153, 255);
+    width: 20%;
+    height: 105%;
+    position: absolute;
+}
+
+#left-leg::before {
+    border-radius: 20% 0 0 55%;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    top: -4%;
+    left: -6%;
+    transform: rotate(3deg);
+}
+
+#right-leg::before {
+    border-radius: 20% 0 55% 0;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    top: -4%;
+    right: -6%;
+    transform: rotate(-3deg);
+}
+
+/* =================== Leg-circle =================== */
+.leg-circle {
+    background-color: transparent;
+    width: 7%;
+    height: 2.5%;
+    border-radius: 200px 200px 0 0;
+    border: 2px solid black;
+    border-bottom: none;
+    position: absolute;
+    bottom: 10%;
+    left: 46%;
+    /* z-index: 3; */
+    box-shadow: -1px -15px 0 15px rgb(0, 153, 255);
+}
+
+/* =================== foot =================== */
+.foot {
+    background-color: white;
+    width: 15%;
+    height: 7%;
+    position: absolute;
+    bottom: 4%;
+    /* z-index:6; */
+}
+
+.foot::before, .foot::after {
+    content: "";
+    display: block;
+    background-color: white;
+    width: 75%;
+    height: 105%;
+    border: 2px solid black;
+    position: absolute;
+    top: -5%;
+}
+
+.foot::before {
+    border-right: none;
+    border-radius: 50% 0% 0 40%;
+    left: -25%;
+}
+
+.foot::after {
+    border-left: none;
+    border-radius: 0% 50% 40% 0%;
+    right: -25%;
+}
+
+#left-foot {
+    left: 30.5%;
+}
+
+#right-foot {
+    right: 30.5%;
+}
