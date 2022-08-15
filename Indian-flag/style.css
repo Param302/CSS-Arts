@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    --saffron: #ff9933;
+    --white: #fff;
+    --green: #138808;
+    --navy-blue: #000080;
+}
+
+.flag {
+    /* background-color: #00ccff; */
+    width: 60vw;
+    max-width: 600px;
+    height: 65vh;
+    max-height: 320px;
+    margin: 50px auto;
+    position: sticky;
+}
+
+.saffron,
+.white,
+.green {
+    width: 100%;
+    height: 33.4%;
+    border: 2px solid black;
+}
+
+.saffron {
+    background-color: var(--saffron);
+    border-bottom: none;
+}
+
+.white {
+    background-color: var(--white);
+    height: 33%;
+    border-top: 1px;
+    border-bottom: 1px;
+    padding-top: 10px;
+}
+
+.green {
+    background-color: var(--green);
+    border-top: none;
+}
+
+/* =============== Ashok Chakra =============== */
+
+.ashok-chakra {
+    width: 14%;
+    height: 80%;
+    background-color: inherit;
+    border: 5px solid var(--navy-blue);
+    border-radius: 50%;
+    margin: auto;
+    position: relative;
+}
+
+/* =============== Lines =============== */
+.line-cover {
+    position: absolute;
+    width: 20px;
+    height: 8px;
+    background-color: transparent;
+    transform: rotate(75deg);
+}
+
+.lines {
+    width: 9px;
+    height: 3px;
+    display: block;
+    background-color: var(--navy-blue);
+    transform: skewX(70deg) scale(2);
+}
+
+#line-1 {
+    left: 30px;
+    top: 24px;
+}
+
+#line-2 {
+    bottom: 14px;
+    left: 32px;
+}
+
+#line-3,
+#line-4 {
+    transform: rotate(-10deg);
+    top: 38px;
+}
+
+#line-3 {
+    left: 18px;
+}
+
+#line-4 {
+    right: 4px;
+}
+
+#line-5,
+#line-6 {
+    transform: rotate(32deg);
+}
+
+#line-5 {
+    top: 28px;
+    left: 20px;
+}
+
+#line-6 {
+    bottom: 22px;
+    right: 12px;
+}
+
+#line-7,
+#line-8 {
+    transform: rotate(-55deg);
+}
+
+#line-7 {
+    top: 19px;
+    right: 9px;
+}
+
+#line-8 {
+    bottom: 28px;
+    left: 23px;
+}
+
+#line-9,
+#line-10 {
+    transform: rotate(60deg);
+}
+
+#line-9 {
+    top: 25px;
+    left: 25px;
+}
+
+#line-10 {
+    bottom: 17px;
+    right: 21px;
+}
+
+#line-11,
+#line-12 {
+    transform: rotate(95deg);
+}
+
+#line-11 {
+    top: 24px;
+    right: 27px;
+}
+
+#line-12 {
+    bottom: 16px;
+    left: 24px;
+}
+
+#line-13,
+#line-14 {
+    transform: rotate(15deg);
+}
+
+#line-13 {
+    top: 30px;
+    left: 18px;
+}
+
+#line-14 {
+    bottom: 27px;
+    right: 6px;
+}
+
+#line-15,
+#line-16 {
+    transform: rotate(50deg);
+}
+
+#line-15 {
+    top: 24px;
+    left: 20px;
+}
+
+#line-16 {
+    bottom: 20px;
+    right: 16px;
+}
+
+#line-17,
+#line-18 {
+    transform: rotate(0deg);
+}
+
+#line-17 {
+    top: 34px;
+    left: 18px;
+}
+
+#line-18 {
+    bottom: 32px;
+    right: 5px;
+}
+
+#line-19,
+#line-20 {
+    transform: rotate(-20deg);
+}
+
+#line-19 {
+    bottom: 34px;
+    left: 18px;
+}
+
+#line-20 {
+    top: 32px;
+    right: 5px;
+}
+
+#line-21,
+#line-22 {
+    transform: rotate(-40deg);
+}
+
+#line-21 {
+    bottom: 30px;
+    left: 19px;
+}
+
+#line-22 {
+    top: 26px;
+    right: 7px;
+}
+
+#line-23,
+#line-24 {
+    transform: rotate(-70deg);
+}
+
+#line-23 {
+    bottom: 24px;
+    left: 24px;
+}
+
+#line-24 {
+    top: 15px;
+    right: 14px;
+}
+
+#main-circle {
+    width: 15px;
+    height: 15px;
+    background-color: var(--navy-blue);
+    position: absolute;
+    top: 31px;
+    left: 29px;
+    border: 3px solid var(--white);
+    border-radius: 50%;
+}
+
+.circles {
+    width: 6px;
+    height: 6px;
+    background-color: var(--navy-blue);
+    position: absolute;
+    border-radius: 50%;
+}
+
+#circle-1 {
+    top: -3px;
+    left: 28px;
+}
+
+#circle-2 {
+    bottom: -3px;
+    left: 32px;
+}
+
+#circle-3,
+#circle-4 {
+    top: 32px;
+}
+
+#circle-3 {
+    left: -3px;
+}
+
+#circle-4 {
+    right: -4px;
+}
+
+#circle-5,
+#circle-6 {
+    top: 14px;
+}
+
+#circle-5 {
+    left: 3px;
+}
+
+#circle-6 {
+    right: 3px;
+}
+
+#circle-7,
+#circle-8 {
+    top: 6px;
+}
+
+#circle-7 {
+    left: 10px;
+}
+
+#circle-8 {
+    right: 11px;
+}
+
+#circle-9 {
+    top: 0;
+    left: 18px;
+}
+
+#circle-10 {
+    top: -3px;
+    right: 30px;
+}
+
+#circle-11 {
+    bottom: 14px;
+    left: 4px;
+}
+
+#circle-12 {
+    bottom: 14px;
+    right: 4px;
+}
+
+#circle-13,
+#circle-14 {
+    top: 23px;
+}
+
+#circle-14 {
+    right: 0;
+}
+
+#circle-15 {
+    top: 0px;
+    right: 20px;
+}
+
+#circle-16,
+#circle-17 {
+    bottom: 24px;
+}
+
+#circle-17 {
+    right: 0;
+}
+
+#circle-18,
+#circle-19 {
+    bottom: 35px;
+}
+
+#circle-18 {
+    left: -3px;
+}
+
+#circle-19 {
+    right: -4px;
+}
+
+#circle-20,
+#circle-21 {
+    bottom: 7px;
+}
+
+#circle-20 {
+    left: 11px;
+}
+
+#circle-21 {
+    right: 11px;
+}
+
+#circle-22,
+#circle-23 {
+    bottom: 1px;
+}
+
+#circle-22 {
+    left: 20px;
+}
+
+#circle-23 {
+    right: 20px;
+}
+
+#circle-24 {
+    bottom: -2px;
+    right: 30px;
+}
+
+.flag::after {
+    content: "";
+    top: 0;
+    transform: translate(100%);
+    width: 100%;
+    height: 104%;
+    position: absolute;
+    z-index: 2;
+    animation: slide 1s infinite;
+}
+
+.flag::after {
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.8) 50%,
+        rgba(128, 186, 232, 0) 99%,
+        rgba(125, 185, 232, 0) 100%
+    );
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
